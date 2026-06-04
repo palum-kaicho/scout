@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gemaris スカウトマニュアル</title>
+
+<style>
+:root{
+    --primary:#6d5dfc;
+    --primary-light:#f3f1ff;
+    --success:#22c55e;
+    --danger:#ef4444;
+    --text:#222;
+    --bg:#f6f7fb;
+    --card:#ffffff;
+    --border:#e5e7eb;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+header{
+    background:linear-gradient(135deg,var(--primary),#8b7cff);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:.9;
+}
+
+.card{
+    background:var(--card);
+    border-radius:16px;
+    padding:28px;
+    margin-bottom:24px;
+    box-shadow:0 4px 20px rgba(0,0,0,.05);
+}
+
+h2{
+    color:var(--primary);
+    margin-bottom:16px;
+    border-left:6px solid var(--primary);
+    padding-left:12px;
+}
+
+h3{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+.kpi-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.kpi{
+    background:var(--primary-light);
+    border-left:5px solid var(--primary);
+    border-radius:12px;
+    padding:20px;
+}
+
+.kpi strong{
+    display:block;
+    font-size:1.6rem;
+}
+
+.rank{
+    margin-top:20px;
+    padding:20px;
+    border-radius:12px;
+}
+
+.rank-a{
+    background:#ecfdf5;
+    border-left:6px solid #22c55e;
+}
+
+.rank-b{
+    background:#eff6ff;
+    border-left:6px solid #3b82f6;
+}
+
+.rank-c{
+    background:#fff7ed;
+    border-left:6px solid #f97316;
+}
+
+.rank-d{
+    background:#faf5ff;
+    border-left:6px solid #a855f7;
+}
+
+.flow{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:20px;
+}
+
+.flow-step{
+    background:var(--primary-light);
+    padding:15px;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+.arrow{
+    text-align:center;
+    font-size:24px;
+    color:var(--primary);
+}
+
+.good{
+    background:#ecfdf5;
+    border-left:5px solid var(--success);
+    padding:15px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.bad{
+    background:#fef2f2;
+    border-left:5px solid var(--danger);
+    padding:15px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.template{
+    background:#111827;
+    color:#f9fafb;
+    padding:25px;
+    border-radius:14px;
+    white-space:pre-wrap;
+    margin-top:20px;
+}
+
+.notice{
+    background:#fff8e1;
+    border-left:5px solid #f59e0b;
+    padding:15px;
+    border-radius:10px;
+}
+
+.box{
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:20px;
+    margin-top:15px;
+}
+
+.copy-btn{
+    background:#6d5dfc;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-bottom:12px;
+    width:100%;
+    font-size:16px;
+}
+
+.copy-btn:hover{
+    opacity:.9;
+}
+
+.copy-success{
+    background:#22c55e !important;
+}
+
+.footer{
+    text-align:center;
+    margin-top:50px;
+    color:#666;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+    <h1>Gemaris スカウトマニュアル</h1>
+    <p>運用版 Ver.1.0</p>
+</header>
+
+<div class="card">
+<h2>1. 目的</h2>
+<p>本マニュアルは、当事務所の新規ライバー獲得および育成のためのスカウト活動における基準と行動指針を定めるものである。</p>
+
+<h3>スカウト活動の目的</h3>
+<ul>
+<li>新規ライバーの発掘および獲得</li>
+<li>所属ライバーのジャンル・属性バランスの最適化</li>
+<li>事務所ブランド価値の向上</li>
+<li>将来的なトップライバー候補の確保</li>
+<li>継続的な収益基盤の構築</li>
+</ul>
+
+<div class="kpi-grid">
+<div class="kpi">
+<span>新規接触数</span>
+<strong>150+</strong>
+</div>
+<div class="kpi">
+<span>返信率</span>
+<strong>25%</strong>
+</div>
+<div class="kpi">
+<span>面談設定率</span>
+<strong>15%</strong>
+</div>
+<div class="kpi">
+<span>所属成約率</span>
+<strong>10%</strong>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>2. スカウト対象基準</h2>
+<div class="rank rank-a">
+<h3>Aランク（即戦力）</h3>
+<ul>
+<li>配信頻度週5回以上</li>
+<li>固定ファンがいる</li>
+<li>コンテンツ力が強い</li>
+<li>一定の実績を有している</li>
+</ul>
+</div>
+
+<div class="rank rank-b">
+<h3>Bランク（成長期待）</h3>
+<ul>
+<li>会話が自然</li>
+<li>リアクションが良い</li>
+<li>声が魅力的</li>
+<li>成長意欲がある</li>
+</ul>
+</div>
+
+<div class="rank rank-c">
+<h3>Cランク（特徴保有）</h3>
+<ul>
+<li>活動経験あり</li>
+<li>SNS発信力あり</li>
+<li>特技や専門性あり</li>
+</ul>
+</div>
+
+<div class="rank rank-d">
+<h3>Dランク（発掘枠）</h3>
+<ul>
+<li>未経験者</li>
+<li>将来性がある</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<h2>3. 対象プラットフォーム</h2>
+<ul>
+<li>Palmu</li>
+<li>IRIAM</li>
+<li>Pococha</li>
+<li>TikTok LIVE</li>
+<li>Spoon</li>
+<li>ふわっち</li>
+<li>その他ライブ配信サービス</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>4. コミュニケーションの基本原則</h2>
+
+<h3>原則1：コピペ禁止</h3>
+<div class="good">
+〇 「先日の雑談配信での○○のお話が印象的でした」
+</div>
+<div class="bad">
+× 「配信を拝見して素敵だと思いました」
+</div>
+
+<h3>原則2：信頼を先に作る</h3>
+<ul>
+<li>事務所HP</li>
+<li>公式SNS</li>
+<li>会社概要</li>
+<li>担当者情報</li>
+</ul>
+
+<h3>原則3：迅速対応</h3>
+<ul>
+<li>返信は理想1時間以内、遅くとも24時間以内</li>
+</ul>
+
+<h3>原則4：売り込みすぎない</h3>
+<p>目的は契約ではなく関係構築です。相談ベースで会話を進める。</p>
+
+<h3>原則5：誇大表現をしない</h3>
+<div class="bad">
+・必ず稼げます<br>
+・絶対有名になります<br>
+・誰でもトップライバーになれます
+</div>
+<div class="good">
+・成長のための支援を行っています<br>
+・実績に基づくサポートを提供しています<br>
+・活動目標に合わせた支援を行っています
+</div>
+</div>
+
+<div class="card">
+<h2>5. 候補者リサーチシート</h2>
+<p>DM送信前に記録しておきたい内容。</p>
+
+<div class="box">
+<p>【候補者名】</p>
+<p>【活動プラットフォーム】</p>
+<p>【配信URL】</p>
+<p>【配信歴】</p>
+<p>【配信頻度】</p>
+<p>【魅力に感じた点】</p>
+<p>【印象に残った配信内容】</p>
+<p>【優先ランク】</p>
+<p>A ／ B ／ C ／ D</p>
+</div>
+</div>
+
+<div class="card">
+<h2>6. 初回DMテンプレート</h2>
+
+<!-- 配信経験者向け -->
+<details>
+<summary>📂 配信経験者向け</summary>
+
+<button class="copy-btn" onclick="copyTemplate('dm-exp')">📋 コピー</button>
+
+<div class="template" id="dm-exp">
+初めまして。
+Gemaris合同会社のスカウト担当 <<名前>> と申します。
+
+突然のDM失礼いたします。
+
+<<配信プラットフォーム名>>での活動（特に〇日に行われていた〇〇の配信など）を拝見しており、<<相手の名前>>さんの <<具体的に惹かれた魅力、トークのテンポやファンとの距離感など>> が本当に素敵だと感じ、ご連絡いたしました。
+
+現在、私たちは新しくライバー事務所を立ち上げるにあたり、「一緒に事務所の顔となってくれる初期メンバー」を募集しております。
+
+立ち上げ段階だからこそ、一人ひとりに寄り添ったサポートや、活動目標の実現に向けた支援ができる環境をご用意しております。
+
+【サポート例】
+・機材レンタル（ミキサー・PC等）
+・配信企画に関する相談
+・サムネイル制作支援
+・活動分析や配信改善サポート
+
+まずは「今後どのような活動を目指しているのか」や「現在のお悩み」などについて、10〜15分ほどフランクにお話しできればと思っております。
+
+ご興味があれば、「詳細希望」と一言ご返信ください。
+
+よろしくお願いいたします。
+
+▼事務所HP
+(URL)
+
+▼公式SNS
+(URL)
+</div>
+</details>
+
+<!-- 配信未経験者向け -->
+<details>
+<summary>📂 配信未経験者向け</summary>
+
+<button class="copy-btn" onclick="copyTemplate('dm-unexp')">📋 コピー</button>
+
+<div class="template" id="dm-unexp">
+初めまして。
+Gemaris合同会社のスカウト担当 <<名前>> と申します。
+
+突然のDM失礼いたします。
+
+SNSでの発信を拝見し、<<相手の名前>>さんの雰囲気や発信内容に魅力を感じ、ご連絡いたしました。
+
+現在、私たちは新しくライバー事務所を立ち上げるにあたり、「これから配信に挑戦してみたい方」も積極的に募集しております。
+
+配信経験がなくても問題ありません。
+
+当事務所では、
+・配信アプリの選定
+・初配信までのサポート
+・配信企画の相談
+・機材レンタル
+・活動分析や改善サポート
+など、未経験者向けの支援体制を整えております。
+
+まずは「配信に興味はあるけど不安なこと」や「どんな活動をしてみたいか」などについて、10〜15分ほど気軽にお話しできればと思っております。
+
+ご興味があれば、「詳細希望」と一言ご返信ください。
+
+よろしくお願いいたします。
+
+▼事務所HP
+(URL)
+
+▼公式SNS
+(URL)
+</div>
+</details>
+
+</div>
+<div class="card">
+<h2>7. スカウトフロー</h2>
+
+<div class="flow">
+<div class="flow-step">① リサーチ・候補者選定</div>
+<div class="arrow">↓</div>
+<div class="flow-step">② DMによるファーストアプローチ</div>
+<div class="arrow">↓</div>
+<div class="flow-step">③ 会話のラリー（1〜2往復程度）</div>
+<div class="arrow">↓</div>
+<div class="flow-step">④ 社内Discordへ情報共有</div>
+<div class="arrow">↓</div>
+<div class="flow-step">⑤ 公式面談の実施</div>
+<div class="arrow">↓</div>
+<div class="flow-step">⑥ 条件提示・意思確認・契約</div>
+</div>
+
+<h3>共有内容</h3>
+<ul>
+<li>配信URL</li>
+<li>魅力に感じた点</li>
+<li>相手の反応</li>
+<li>面談可否</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>8. スカウト活動の禁止事項</h2>
+<div class="notice">
+<ul>
+<li>虚偽説明</li>
+<li>他事務所への誹謗中傷</li>
+<li>契約締結の強要</li>
+<li>深夜帯の執拗な連絡</li>
+<li>個人SNSへの過度な追跡</li>
+<li>無断での個人情報取得</li>
+<li>契約権限を超えた条件提示</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<h2>9. スカウト担当者の心得</h2>
+<p>
+スカウトは契約を取る仕事ではない。<br><br>
+まだ誰にも見つかっていない原石を見つけ、<br>
+その可能性を信じ、<br>
+輝ける場所へ導く仕事である。<br><br>
+短期的な契約数ではなく、長期的な信頼の積み重ねこそが事務所の価値をつくる。<br><br>
+才能を見抜く目と、人を尊重する姿勢を常に忘れないこと。
+</p>
+</div>
+
+<div class="footer">
+Gemaris Scout Manual Ver.1.0
+</div>
+
+</div>
+
+<script>
+
+function toggleAccordion(id){
+    const el = document.getElementById(id);
+
+    if(el.style.display === "none"){
+        el.style.display = "block";
+    }else{
+        el.style.display = "none";
+    }
+}
+
+function copyDMTemplate(id){
+
+    const text = document.getElementById(id).innerText;
+
+    navigator.clipboard.writeText(text);
+
+    const btn = document.querySelector("#"+id+" .copy-btn");
+
+    const original = btn.innerText;
+
+    btn.innerText = "✓ コピーしました";
+
+    btn.classList.add("copy-success");
+
+    setTimeout(() => {
+        btn.innerText = original;
+        btn.classList.remove("copy-success");
+    }, 2000);
+
+}
+
+</script>
+
+</body>
+</html>
