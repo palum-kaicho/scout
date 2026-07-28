@@ -159,13 +159,33 @@ ul{
     margin-top:10px;
 }
 
+details{
+    margin-bottom:15px;
+    background:#fafafa;
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:12px;
+}
+
+summary{
+    font-weight:bold;
+    cursor:pointer;
+    padding:8px;
+    font-size:1.05rem;
+}
+
+.template-wrapper{
+    margin-top:15px;
+}
+
 .template{
     background:#111827;
     color:#f9fafb;
     padding:25px;
     border-radius:14px;
     white-space:pre-wrap;
-    margin-top:20px;
+    margin-top:10px;
+    font-size:0.95rem;
 }
 
 .notice{
@@ -194,6 +214,7 @@ ul{
     margin-bottom:12px;
     width:100%;
     font-size:16px;
+    transition: background 0.3s;
 }
 
 .copy-btn:hover{
@@ -237,19 +258,19 @@ ul{
 <div class="kpi-grid">
 <div class="kpi">
 <span>新規接触数</span>
-<strong>150+</strong>
+<strong>+400</strong>
 </div>
 <div class="kpi">
 <span>返信率</span>
-<strong>25%</strong>
+<strong>8%</strong>
 </div>
 <div class="kpi">
 <span>面談設定率</span>
-<strong>15%</strong>
+<strong>30%</strong>
 </div>
 <div class="kpi">
 <span>所属成約率</span>
-<strong>10%</strong>
+<strong>50%</strong>
 </div>
 </div>
 </div>
@@ -367,85 +388,106 @@ ul{
 <div class="card">
 <h2>6. 初回DMテンプレート</h2>
 
-<!-- 配信経験者向け -->
+<!-- 1. 配信アプリで発掘した人用 -->
 <details>
-<summary>📂 配信経験者向け</summary>
-
-<button class="copy-btn" onclick="copyTemplate('dm-exp')">📋 コピー</button>
-
-<div class="template" id="dm-exp">
-初めまして。
-Gemaris合同会社のスカウト担当 <<名前>> と申します。
-
+<summary>📂 配信アプリで発掘した人用</summary>
+<div class="template-wrapper">
+<button class="copy-btn" onclick="copyDMTemplate('dm-app', this)">📋 コピー</button>
+<div class="template" id="dm-app">はじめまして。
 突然のDM失礼いたします。
 
-<<配信プラットフォーム名>>での活動（特に〇日に行われていた〇〇の配信など）を拝見しており、<<相手の名前>>さんの <<具体的に惹かれた魅力、トークのテンポやファンとの距離感など>> が本当に素敵だと感じ、ご連絡いたしました。
+ライバー事務所「Gemaris」運営の〇〇と申します。
 
-現在、私たちは新しくライバー事務所を立ち上げるにあたり、「一緒に事務所の顔となってくれる初期メンバー」を募集しております。
+<<配信プラットフォーム名>>で○○様の配信を拝見し、
+配信の雰囲気やリスナーさんとの距離感がとても素敵で、
+「もっと大きく活躍できる方だな」
+と感じ、ご連絡しました。
 
-立ち上げ段階だからこそ、一人ひとりに寄り添ったサポートや、活動目標の実現に向けた支援ができる環境をご用意しております。
+現在、Gemarisでは配信アプリ「Palmu」で活動してくださる
+新規ライバー様を募集しております。
 
-【サポート例】
-・機材レンタル（ミキサー・PC等）
-・配信企画に関する相談
-・サムネイル制作支援
-・活動分析や配信改善サポート
+<<相手の名前>>さんの魅力をさらに活かせる環境を
+ご提案できればと思っております。
 
-まずは「今後どのような活動を目指しているのか」や「現在のお悩み」などについて、10〜15分ほどフランクにお話しできればと思っております。
+※ 現在の配信活動との兼業や移行についてのご相談も大歓迎です！
 
-ご興味があれば、「詳細希望」と一言ご返信ください。
+特典や詳細につきましては、添付の画像にまとめておりますので、
+一読いただけますと幸いです。
 
-よろしくお願いいたします。
+無理な勧誘は一切していませんので、
+情報収集だけでもお気軽によろしくお願いします。
 
-▼事務所HP
-(URL)
-
-▼公式SNS
-(URL)
+ ▼ Gemaris 公式サイト
+ https://live-gemaris.com/</div>
 </div>
 </details>
 
-<!-- 配信未経験者向け -->
+<!-- 2. SNSで発掘した人用 -->
 <details>
-<summary>📂 配信未経験者向け</summary>
-
-<button class="copy-btn" onclick="copyTemplate('dm-unexp')">📋 コピー</button>
-
-<div class="template" id="dm-unexp">
-初めまして。
-Gemaris合同会社のスカウト担当 <<名前>> と申します。
-
+<summary>📂 SNSで発掘した人用</summary>
+<div class="template-wrapper">
+<button class="copy-btn" onclick="copyDMTemplate('dm-sns', this)">📋 コピー</button>
+<div class="template" id="dm-sns">はじめまして。
+はじめまして。
 突然のDM失礼いたします。
 
-SNSでの発信を拝見し、<<相手の名前>>さんの雰囲気や発信内容に魅力を感じ、ご連絡いたしました。
+ライバー事務所「Gemaris」運営の〇〇と申します。
 
-現在、私たちは新しくライバー事務所を立ち上げるにあたり、「これから配信に挑戦してみたい方」も積極的に募集しております。
+<>での投稿を拝見し、
+<<相手の名前>>さんの<<素敵な雰囲気/〇〇な発信内容>>がとても魅力的に感じ、
+ライブ配信の世界で大きく輝けるポテンシャルを感じてご連絡いたしました。
 
-配信経験がなくても問題ありません。
+「ライブ配信未経験」でも全く問題ありません。
 
-当事務所では、
-・配信アプリの選定
-・初配信までのサポート
-・配信企画の相談
-・機材レンタル
-・活動分析や改善サポート
-など、未経験者向けの支援体制を整えております。
+現在ご活躍中のライバーさんも、最初は未経験からのスタートがほとんどです。
 
-まずは「配信に興味はあるけど不安なこと」や「どんな活動をしてみたいか」などについて、10〜15分ほど気軽にお話しできればと思っております。
+特典や活動の詳細につきましては、添付の画像にまとめておりますので、
+一読いただけますと幸いです。
 
-ご興味があれば、「詳細希望」と一言ご返信ください。
+まずは「配信ってどんな感じ？」「自分にもできるかな？」といった疑問や
+不安をお聞きするだけでも大歓迎です！
 
-よろしくお願いいたします。
+ほんの少しでもご興味がございましたら、
+お気軽にスタンプ1つや一言だけでも返信いただけると嬉しいです。
 
-▼事務所HP
-(URL)
+お忙しいところ恐縮ですが、ご確認のほどよろしくお願いいたします。
 
-▼公式SNS
-(URL)
+ ▼ Gemaris 公式サイト
+ https://live-gemaris.com/</div>
+</div>
+</details>
+
+<!-- 3. プレミアライバー対象者向け（代表直接スカウト） -->
+<details>
+<summary>📂 プレミアライバー対象者向け（代表直接スカウト）</summary>
+<div class="template-wrapper">
+<button class="copy-btn" onclick="copyDMTemplate('dm-premier', this)">📋 コピー</button>
+<div class="template" id="dm-premier">はじめまして。
+突然のDM失礼します。
+
+Gemaris代表の神楽と申します。
+
+<<配信プラットフォーム名>>での○○様の配信を拝見し、
+配信の雰囲気やリスナーさんとの距離感がとても素敵で、
+「もっと大きく活躍できる方だな」
+と感じ、ご連絡しました。
+
+現在、Palmuでは他配信アプリで実績のある方向けに、
+プレミアスタートキャンペーンを実施しています。
+
+詳細は添付画像にまとめていますので、
+もし少しでも興味があれば見ていただけると幸いでございます。
+
+無理な勧誘は一切していませんので、
+情報収集だけでもお気軽によろしくお願いします。
+
+ ▼ Gemaris 公式サイト
+ https://live-gemaris.com/</div>
 </div>
 </details>
 
 </div>
+
 <div class="card">
 <h2>7. スカウトフロー</h2>
 
@@ -506,38 +548,23 @@ Gemaris Scout Manual Ver.1.0
 </div>
 
 <script>
-
-function toggleAccordion(id){
-    const el = document.getElementById(id);
-
-    if(el.style.display === "none"){
-        el.style.display = "block";
-    }else{
-        el.style.display = "none";
-    }
-}
-
-function copyDMTemplate(id){
-
+function copyDMTemplate(id, btnElement) {
     const text = document.getElementById(id).innerText;
 
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(text).then(() => {
+        const originalText = btnElement.innerText;
 
-    const btn = document.querySelector("#"+id+" .copy-btn");
+        btnElement.innerText = "✓ コピーしました";
+        btnElement.classList.add("copy-success");
 
-    const original = btn.innerText;
-
-    btn.innerText = "✓ コピーしました";
-
-    btn.classList.add("copy-success");
-
-    setTimeout(() => {
-        btn.innerText = original;
-        btn.classList.remove("copy-success");
-    }, 2000);
-
+        setTimeout(() => {
+            btnElement.innerText = originalText;
+            btnElement.classList.remove("copy-success");
+        }, 2000);
+    }).catch(err => {
+        console.error('コピーに失敗しました: ', err);
+    });
 }
-
 </script>
 
 </body>
